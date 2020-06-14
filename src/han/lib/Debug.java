@@ -126,10 +126,7 @@ public class Debug {
 		for (StackTraceElement STE : e.getStackTrace()) {
 			System.err.println(ASCII_CODES.Tab.toString() + ASCII_CODES.Tab.toString() + ASCII_CODES.Bright_RED + "<E>"
 					+ ASCII_CODES.Bright_WHITE + " " + STE.toString().replaceFirst("\\(", ASCII_CODES.CYAN + "(")
-					+ ASCII_CODES.YELLOW + " " /*
-												 * + (STE.getModuleVersion() ==
-												 * null?"":"version of class: "+STE.getModuleVersion())
-												 */ + ASCII_CODES.RESET);
+					+ ASCII_CODES.YELLOW + " " + ASCII_CODES.RESET);
 		}
 		System.err.println(ASCII_CODES.Bright_YELLOW + (ASCII_CODES.Tab + "}") + ASCII_CODES.RESET);
 	}
